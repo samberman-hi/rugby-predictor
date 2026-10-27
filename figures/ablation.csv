@@ -1,0 +1,8 @@
+dropped,log_loss_all,log_loss_tier1
+(none),0.4945,0.4977
+ratings,0.5058,0.5057
+form,0.4948,0.4946
+schedule,0.4945,0.4964
+venue & travel,0.4942,0.4972
+matchup,0.503,0.5004
+context,0.4947,0.498

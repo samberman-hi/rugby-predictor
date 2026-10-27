@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+.DS_Store
+
+# Raw wikitext and the Kaggle CSV are re-downloadable with scripts/download_data.py.
+# data/matches.csv (the parsed, cleaned table) is committed so the project runs without them.
+data/raw/

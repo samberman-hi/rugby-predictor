@@ -1,0 +1,57 @@
+subset,model,matches,log_loss,brier,accuracy
+All tests,Home-win base rate,3348,0.6721,0.2344,0.6093
+All tests,World Rugby rankings,3348,0.515,0.1657,0.7536
+All tests,Elo (raw expectancy),3348,0.5139,0.1649,0.7594
+All tests,Elo + logistic,3348,0.5141,0.1655,0.7557
+All tests,Logistic (20 features),3348,0.4961,0.1588,0.764
+All tests,Gradient boosting (20 features),3348,0.5031,0.1611,0.7612
+All tests,Margin regression (20 features),3348,0.5051,0.1622,0.764
+All tests,Ensemble,3348,0.4945,0.1585,0.767
+Tier-1 v tier-1,Home-win base rate,930,0.6864,0.2411,0.5846
+Tier-1 v tier-1,World Rugby rankings,930,0.5213,0.1668,0.7516
+Tier-1 v tier-1,Elo (raw expectancy),930,0.506,0.1608,0.7714
+Tier-1 v tier-1,Elo + logistic,930,0.5049,0.161,0.7681
+Tier-1 v tier-1,Logistic (20 features),930,0.5028,0.1591,0.7692
+Tier-1 v tier-1,Gradient boosting (20 features),930,0.5092,0.1618,0.7659
+Tier-1 v tier-1,Margin regression (20 features),930,0.5125,0.1645,0.7593
+Tier-1 v tier-1,Ensemble,930,0.4977,0.1589,0.7681
+Involving a tier-1 side,Home-win base rate,1232,0.6664,0.2322,0.6198
+Involving a tier-1 side,World Rugby rankings,1232,0.4663,0.146,0.7917
+Involving a tier-1 side,Elo (raw expectancy),1232,0.4567,0.1431,0.8008
+Involving a tier-1 side,Elo + logistic,1232,0.4567,0.1434,0.7975
+Involving a tier-1 side,Logistic (20 features),1232,0.4433,0.1372,0.8066
+Involving a tier-1 side,Gradient boosting (20 features),1232,0.4484,0.1391,0.8033
+Involving a tier-1 side,Margin regression (20 features),1232,0.4512,0.1413,0.7975
+Involving a tier-1 side,Ensemble,1232,0.4396,0.1372,0.8058
+Rugby World Cup,Home-win base rate,186,0.5881,0.1959,0.7609
+Rugby World Cup,World Rugby rankings,186,0.3891,0.1181,0.8261
+Rugby World Cup,Elo (raw expectancy),186,0.3626,0.1122,0.8478
+Rugby World Cup,Elo + logistic,186,0.3667,0.1135,0.837
+Rugby World Cup,Logistic (20 features),186,0.3323,0.0992,0.8641
+Rugby World Cup,Gradient boosting (20 features),186,0.3306,0.1017,0.8315
+Rugby World Cup,Margin regression (20 features),186,0.348,0.1083,0.8207
+Rugby World Cup,Ensemble,186,0.337,0.1021,0.837
+2008-2016 (selection window),Home-win base rate,1596,0.6695,0.233,0.6161
+2008-2016 (selection window),World Rugby rankings,1596,0.523,0.1692,0.7396
+2008-2016 (selection window),Elo (raw expectancy),1596,0.5231,0.1685,0.7537
+2008-2016 (selection window),Elo + logistic,1596,0.5234,0.1693,0.7454
+2008-2016 (selection window),Logistic (20 features),1596,0.4968,0.1598,0.7582
+2008-2016 (selection window),Gradient boosting (20 features),1596,0.5059,0.1629,0.7479
+2008-2016 (selection window),Margin regression (20 features),1596,0.5134,0.1649,0.7588
+2008-2016 (selection window),Ensemble,1596,0.4991,0.1603,0.7594
+2017-2026 (clean holdout),Home-win base rate,1752,0.6746,0.2356,0.6031
+2017-2026 (clean holdout),World Rugby rankings,1752,0.5077,0.1625,0.7663
+2017-2026 (clean holdout),Elo (raw expectancy),1752,0.5055,0.1616,0.7646
+2017-2026 (clean holdout),Elo + logistic,1752,0.5056,0.162,0.7652
+2017-2026 (clean holdout),Logistic (20 features),1752,0.4954,0.158,0.7692
+2017-2026 (clean holdout),Gradient boosting (20 features),1752,0.5005,0.1595,0.7733
+2017-2026 (clean holdout),Margin regression (20 features),1752,0.4976,0.1597,0.7686
+2017-2026 (clean holdout),Ensemble,1752,0.4903,0.1568,0.7739
+"Holdout, tier-1 v tier-1",Home-win base rate,468,0.6825,0.2387,0.5886
+"Holdout, tier-1 v tier-1",World Rugby rankings,468,0.5219,0.1674,0.7505
+"Holdout, tier-1 v tier-1",Elo (raw expectancy),468,0.5153,0.1648,0.7527
+"Holdout, tier-1 v tier-1",Elo + logistic,468,0.5111,0.1636,0.7593
+"Holdout, tier-1 v tier-1",Logistic (20 features),468,0.5114,0.1622,0.7549
+"Holdout, tier-1 v tier-1",Gradient boosting (20 features),468,0.5182,0.1656,0.7615
+"Holdout, tier-1 v tier-1",Margin regression (20 features),468,0.5116,0.1646,0.744
+"Holdout, tier-1 v tier-1",Ensemble,468,0.5045,0.1615,0.7593
