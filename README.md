@@ -8,7 +8,7 @@ walk-forward**: every year from 2008 to 2026 is predicted by models trained only
 years. It then prices the **November 2026 Nations Championship**.
 
 The honest result: **ratings do most of the work, and the extra features add a real but
-modest edge.** On the clean 2017-2026 holdout, the ensemble's log-loss is 0.490 against 0.506 for
+modest edge.** On the 2017-2026 holdout, the ensemble's log-loss is 0.490 against 0.505 for
 Elo and 0.508 for the World Rugby rankings, and it is better calibrated. On tier-1 v tier-1
 tests the gain shrinks (0.505 v 0.515), and the ensemble picks the winner barely more often than Elo (75.9% v 75.3%). Of the 20
 inputs, four carry almost all the signal: Elo gap, recent head-to-head margin,
@@ -33,7 +33,14 @@ World Cup opener and Wembley 1999), Wikipedia is right and Kaggle is wrong. Home
 | Burn-in | 1871 - 1994 | ratings only |
 | Training start | 1995 (professional era) | every model is fitted on 1995 to the year before the test year |
 | Selection window | 2008 - 2016 (1,596 tests) | choosing Elo K, home advantage, regularisation, tree depth, weights |
-| **Clean holdout** | **2017 - Oct 2026 (1,752 tests)** | no decision was made by looking at it |
+| **Holdout** | **2017 - Oct 2026 (1,752 tests)** | reported separately (see the note below) |
+
+*A note on the holdout.* Elo's K and home advantage were tuned on 1995-2007, which is fully clean. The
+model settings (regularisation, tree depth, sample weights, ensemble members) were chosen from about a
+dozen variants. My experiments printed scores for the whole 2008-2026 period, so I saw the holdout
+years while choosing. Each chosen setting was also the best (or tied) on 2008-2016 alone, and the
+grid was small, so the optimism should be minor. Still, 2017-2026 is a near-clean holdout, not a
+sealed one. The 2027 season will be the first truly out-of-sample test.
 
 **1. Forecast accuracy (walk-forward, lower log-loss/Brier is better).** Draws count as half a win.
 
@@ -197,8 +204,9 @@ Design choices worth knowing:
 - **No look-ahead.** Each match's features are recorded *before* its result updates any state.
   A test changes every result after match k and checks that no feature up to match k moves.
   Scheduled fixtures get features but never update a rating.
-- **Honest tuning.** Every hyperparameter was chosen on 2008-2016. The 2017-2026 numbers
-  are reported separately as a clean holdout, and the gains hold there.
+- **Tuning and the holdout.** Settings were confirmed on 2008-2016 and the 2017-2026 numbers
+  are reported separately. That period was visible during the experiments, though (see the note
+  under the timeline), so treat it as near-clean.
 - **Venue inference.** Wikipedia lists a "home" side even at neutral grounds. A city's
   country is learnt as the side that most often plays *home* tests there outside World Cups,
   with World Cup hosts and a short override list for neutral cities (Chicago, Tokyo, Hong Kong ...).

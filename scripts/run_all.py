@@ -242,7 +242,7 @@ def main():
              "Involving a tier-1 side": preds.home.isin(teams.TIER1) | preds.away.isin(teams.TIER1),
              "Rugby World Cup": preds.comp_name.isin(["rwc_pool", "rwc_knockout"]),
              "2008-2016 (selection window)": preds.date < "2017-01-01",
-             "2017-2026 (clean holdout)": preds.date >= "2017-01-01",
+             "2017-2026 (holdout)": preds.date >= "2017-01-01",
              "Holdout, tier-1 v tier-1": (preds.date >= "2017-01-01") & ev.tier1_mask(preds)}
     tables = {k: ev.score_table(preds, m) for k, m in masks.items()}
     summary = pd.concat(tables, names=["subset"]).round(4)

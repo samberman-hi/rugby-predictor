@@ -13,8 +13,8 @@ and towards tier-1 v tier-1 tests, which are otherwise outnumbered by tier-2 mis
   EloLogit       logistic regression on the Elo gap alone
   Ensemble       average of the four win probabilities, plus the margin model's scoreline
 
-Hyperparameters were chosen on the 2008-2016 walk-forward window only; 2017-2026 is a clean
-holdout (see README).
+Hyperparameters were confirmed on the 2008-2016 walk-forward window; 2017-2026 is reported
+separately as a near-clean holdout (see the README note on what was visible during tuning).
 """
 import numpy as np
 import pandas as pd

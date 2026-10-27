@@ -39,14 +39,14 @@ Rugby World Cup,Ensemble,186,0.337,0.1021,0.837
 2008-2016 (selection window),Gradient boosting (20 features),1596,0.5059,0.1629,0.7479
 2008-2016 (selection window),Margin regression (20 features),1596,0.5134,0.1649,0.7588
 2008-2016 (selection window),Ensemble,1596,0.4991,0.1603,0.7594
-2017-2026 (clean holdout),Home-win base rate,1752,0.6746,0.2356,0.6031
-2017-2026 (clean holdout),World Rugby rankings,1752,0.5077,0.1625,0.7663
-2017-2026 (clean holdout),Elo (raw expectancy),1752,0.5055,0.1616,0.7646
-2017-2026 (clean holdout),Elo + logistic,1752,0.5056,0.162,0.7652
-2017-2026 (clean holdout),Logistic (20 features),1752,0.4954,0.158,0.7692
-2017-2026 (clean holdout),Gradient boosting (20 features),1752,0.5005,0.1595,0.7733
-2017-2026 (clean holdout),Margin regression (20 features),1752,0.4976,0.1597,0.7686
-2017-2026 (clean holdout),Ensemble,1752,0.4903,0.1568,0.7739
+2017-2026 (holdout),Home-win base rate,1752,0.6746,0.2356,0.6031
+2017-2026 (holdout),World Rugby rankings,1752,0.5077,0.1625,0.7663
+2017-2026 (holdout),Elo (raw expectancy),1752,0.5055,0.1616,0.7646
+2017-2026 (holdout),Elo + logistic,1752,0.5056,0.162,0.7652
+2017-2026 (holdout),Logistic (20 features),1752,0.4954,0.158,0.7692
+2017-2026 (holdout),Gradient boosting (20 features),1752,0.5005,0.1595,0.7733
+2017-2026 (holdout),Margin regression (20 features),1752,0.4976,0.1597,0.7686
+2017-2026 (holdout),Ensemble,1752,0.4903,0.1568,0.7739
 "Holdout, tier-1 v tier-1",Home-win base rate,468,0.6825,0.2387,0.5886
 "Holdout, tier-1 v tier-1",World Rugby rankings,468,0.5219,0.1674,0.7505
 "Holdout, tier-1 v tier-1",Elo (raw expectancy),468,0.5153,0.1648,0.7527
